@@ -8,15 +8,5 @@ class Partay
 end
 
 get '/' do
-  options = {
-    body: {
-      name: ENV['PARAM_NAME'] || '',
-      version: '2',
-      message: ENV['PARAM_MESSAGE'] || '-'
-    }
-  }
-
-  Partay.post('/users', options)
-
-  Socket.gethostname
+  'Hello, world'
 end
